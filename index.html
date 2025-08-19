@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Protocole Japonais | Vidéo Officielle</title>
+  <meta name="description" content="Regardez la vidéo officielle, puis accédez au protocole digital de bien-être métabolique. Le lien d’achat apparaît après la fin de la vidéo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    body{margin:0;font-family:sans-serif;background:#0b1220;color:#fff;text-align:center}
-    .container{max-width:900px;margin:0 auto;padding:20px}
-    .cta{
-      display:inline-block; margin-top:20px; padding:18px 30px;
-      background:linear-gradient(135deg,#f59e0b,#f97316); color:#000;
-      font-weight:bold; font-size:20px; border-radius:10px; text-decoration:none;
-      box-shadow:0 6px 14px rgba(245,158,11,.3); transition:.2s ease;
+    :root{
+      --bg:#0b1220;
+      --card:#0f172a;
+      --muted:#9ca3af;
+      --primary:#0ea5e9;
+      --accent:#f59e0b;
+      --ok:#10b981;
+      --danger:#ef4444;
     }
-    .cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
-    #cta-block{display:none}
-    footer{margin-top:40px;font-size:13px;color:#9ca3af}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:#e5e7eb}
+    .container{width:min(980px,94%);margin:0 auto}
+    header{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)}
+    .hero{padding:24px 0 8px}
+    .video-wrap{border-radius:16px;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.08);box-shadow:0 16px 38px rgba(0,0,0,.35)}
+    .center{display:flex;justify-content:center;align-items:center}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--accent),#f97316);color:#111827;
+         font-weight:900;border:none;padding:16px 22px;border-radius:12px;text-decoration:none;font-size:18px;
+         box-shadow:0 10px 22px rgba(245,158,11,.28);transition:transform .1s ease}
+    .cta:hover{transform:translateY(-2px)}
+    .cta-sec{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#05202a;color:#93c5fd;text-decoration:none;font-weight:700;border:1px solid rgba(147,197,253,.25)}
+    .hidden{display:none}
+    .muted{color:var(--muted)}
+    .section{padding:34px 0}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);
+          border-radius:16px;padding:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    @media (max-width:960px){.grid-3,.grid-2{grid-template-columns:1fr}}
+    .list{list-style:none;margin:0;padding:0}
+    .list li{display:flex;gap:10px;align-items:flex-start;margin:10px 0}
+    .ok{color:var(--ok)}
+    .seal{width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #34d399, #065f46);display:inline-block;
+          box-shadow:0 8px 18px rgba(16,185,129,.35);margin-right:12px}
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;background:rgba(15,23,42,.92);border-top:1px solid rgba(255,255,255,.08);
+                padding:12px;display:none;z-index:40}
+    .sticky-cta .inner{display:flex;gap:12px;align-items:center;justify-content:center}
+    /* “Comentários” – maquete (rotulado como demo) */
+    .fb-demo{background:#111827;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px}
+    .fb-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+    .fb-head .dot{width:8px;height:8px;border-radius:50%;background:#22c55e}
+    .fb-item{display:flex;gap:10px;padding:12px 0;border-top:1px solid rgba(255,255,255,.06)}
+    .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#34d399)}
+    .name{font-weight:700}
+    .meta{font-size:12px;color:#9ca3af}
+    .btn-like,.btn-reply{font-size:12px;color:#93c5fd;text-decoration:none;margin-right:10px}
+    .disclaimer{background:#091221;border-top:1px solid rgba(255,255,255,.06);padding:20px 0}
+    footer{padding:22px 0;border-top:1px solid rgba(255,255,255,.06);color:#94a3b8;font-size:13px}
   </style>
 
-  <!-- Otimização de performance VTurb -->
+  <!-- VTurb: otimização de carregamento -->
   <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
   <link rel="preload" href="https://scripts.converteai.net/25e923a5-8ed1-451c-b9d2-8d806afe7aa9/players/68a39d43503028c168a403a5/v4/player.js" as="script">
   <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
@@ -29,32 +73,175 @@
   <link rel="dns-prefetch" href="https://api.vturb.com.br">
 </head>
 <body>
-  <div class="container">
-    <!-- Player VTurb em foco -->
-    <vturb-smartplayer id="vid-68a39d43503028c168a403a5" style="display:block;margin:0 auto;width:100%;max-width:900px;"></vturb-smartplayer>
-    <script type="text/javascript">
-      var s=document.createElement("script");
-      s.src="https://scripts.converteai.net/25e923a5-8ed1-451c-b9d2-8d806afe7aa9/players/68a39d43503028c168a403a5/v4/player.js";
-      s.async=!0;document.head.appendChild(s);
-
-      // Mostrar CTA somente quando o vídeo acabar
-      document.addEventListener("DOMContentLoaded", function(){
-        document.addEventListener("vturbEnded", function(){
-          document.getElementById("cta-block").style.display = "block";
-        });
-      });
-    </script>
-
-    <!-- CTA escondido até o vídeo terminar -->
-    <div id="cta-block">
-      <a href="#acheter" class="cta">Obtenir l’accès immédiat pour 47&nbsp;$</a>
-      <p style="font-size:13px;color:#9ca3af;margin-top:10px">Paiement sécurisé • Accès instantané • Contenu 100% digital</p>
+  <header>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+      <div class="brand"><span class="logo"></span> Protocole Japonais – Vidéo</div>
+      <a href="#faq" class="cta-sec">Questions fréquentes</a>
     </div>
-  </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <!-- VÍDEO: foco total -->
+      <div class="video-wrap">
+        <vturb-smartplayer id="vid-68a39d43503028c168a403a5" style="display:block;margin:0 auto;width:100%;max-width:980px;"></vturb-smartplayer>
+      </div>
+      <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/25e923a5-8ed1-451c-b9d2-8d806afe7aa9/players/68a39d43503028c168a403a5/v4/player.js";
+        s.async=!0;document.head.appendChild(s);
+
+        // Mostrar CTA somente quando o vídeo TERMINAR
+        function showCTAs(){
+          document.getElementById("cta-after").style.display="block";
+          document.getElementById("stickyBar").style.display="block";
+        }
+        // Evento padrão do VTurb (ajuste se sua conta usar outro nome de evento)
+        document.addEventListener("vturbEnded", showCTAs);
+
+        // Failsafe: se por algum motivo o evento não vier, libera CTA após 15 minutos
+        setTimeout(function(){
+          if(document.getElementById("cta-after").style.display!=="block"){ showCTAs(); }
+        }, 15*60*1000);
+      </script>
+
+      <!-- CTA (aparece só após o vídeo) -->
+      <section id="cta-after" class="section hidden center">
+        <div class="card" style="text-align:center;max-width:760px">
+          <h2 style="margin:0 0 6px">Accédez au protocole digital complet</h2>
+          <p class="muted" style="margin:0 0 14px">Téléchargement immédiat • Paiement sécurisé • Mise à jour incluse</p>
+          <a href="#" class="cta">Obtenir l’accès immédiat – 47&nbsp;$</a>
+          <div class="muted" style="margin-top:8px;font-size:12px">Remplacez le lien ci-dessus par votre URL de paiement</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Barra fixa (só após o vídeo) -->
+    <div id="stickyBar" class="sticky-cta">
+      <div class="inner">
+        <span class="muted">Prêt à commencer ?</span>
+        <a href="#" class="cta">Accès immédiat – 47&nbsp;$</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Provas & benefícios (abaixo do vídeo) -->
+  <section class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Ce que vous recevez</h3>
+        <ul class="list">
+          <li><span class="ok">✔</span> Guide pas-à-pas (PDF + fiches pratiques)</li>
+          <li><span class="ok">✔</span> Rituel simple (≤ 5 min) & routine journalière</li>
+          <li><span class="ok">✔</span> Mises à jour et accès 24/7</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Pourquoi c’est différent</h3>
+        <ul class="list">
+          <li><span class="ok">✔</span> Focalisé sur des habitudes cohérentes</li>
+          <li><span class="ok">✔</span> Conseils d’hygiène de vie applicables</li>
+          <li><span class="ok">✔</span> Sans promesses irréalistes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Garantie 60 jours</h3>
+        <div style="display:flex;align-items:flex-start"><span class="seal"></span>
+          <p class="muted">Essayez en toute tranquillité. Si cela ne vous convient pas, contactez-nous sous 60 jours pour un remboursement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- “Comentários” estilo Facebook – DEMO / MAQUETTE -->
+  <section class="section">
+    <div class="container">
+      <div class="fb-demo">
+        <div class="fb-head">
+          <div class="dot"></div>
+          <strong>Simulation de commentaires Facebook (démo)</strong>
+          <span class="muted" style="margin-left:8px">— à remplacer par des avis réels / widget social</span>
+        </div>
+
+        <div class="fb-item">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Élodie Martin</div>
+            <div class="muted">J’ai suivi la routine pendant 2 semaines et je me sens plus organisée, plus d’énergie le matin.</div>
+            <div class="meta">Il y a 3 h • <a href="#" class="btn-like">J’aime</a> <a href="#" class="btn-reply">Répondre</a></div>
+          </div>
+        </div>
+
+        <div class="fb-item">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Sébastien R.</div>
+            <div class="muted">Le format pas-à-pas est clair et rapide. Hâte de continuer les prochaines étapes !</div>
+            <div class="meta">Il y a 6 h • <a href="#" class="btn-like">J’aime</a> <a href="#" class="btn-reply">Répondre</a></div>
+          </div>
+        </div>
+
+        <div class="fb-item">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Nadia B.</div>
+            <div class="muted">Simple et pratique à faire à la maison. Merci pour les fiches imprimables 🙏</div>
+            <div class="meta">Hier • <a href="#" class="btn-like">J’aime</a> <a href="#" class="btn-reply">Répondre</a></div>
+          </div>
+        </div>
+
+        <div class="muted" style="font-size:12px;margin-top:6px">
+          *Section de démonstration, non contractuelle. Remplacez par des témoignages vérifiés, captures d’avis ou plugin officiel.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <h3>Ce programme remplace-t-il un traitement ?</h3>
+        <p class="muted">Non. Il s’agit d’un contenu éducatif et de bien-être. Ne modifiez jamais votre traitement sans l’accord de votre médecin.</p>
+      </div>
+      <div class="card">
+        <h3>Quand recevrai-je l’accès ?</h3>
+        <p class="muted">Immédiatement après le paiement. Vous obtenez le guide et les fiches en accès digital 24/7.</p>
+      </div>
+      <div class="card">
+        <h3>Et si cela ne me convient pas ?</h3>
+        <p class="muted">Garantie 60 jours. Écrivez-nous et nous procéderons au remboursement.</p>
+      </div>
+      <div class="card">
+        <h3>À qui s’adresse ce protocole ?</h3>
+        <p class="muted">À toute personne souhaitant structurer une routine matinale simple pour soutenir un mode de vie plus équilibré.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avisos legais -->
+  <section class="disclaimer">
+    <div class="container">
+      <p class="muted" style="font-size:12px;line-height:1.6">
+        Mentions légales : ce site propose un contenu de bien-être. Il ne diagnostique, ne traite ni ne guérit aucune maladie. 
+        Les résultats varient selon les personnes. En cas de diabète ou de toute condition médicale, consultez votre professionnel de santé.
+      </p>
+    </div>
+  </section>
 
   <footer>
-    <p>© <span id="year"></span> Protocole Japonais. Tous droits réservés.</p>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Protocole Japonais – Tous droits réservés</div>
+      <div style="display:flex;gap:12px">
+        <a href="#" style="color:#cbd5e1;text-decoration:none">Contact</a>
+        <a href="#" style="color:#cbd5e1;text-decoration:none">Politique de confidentialité</a>
+        <a href="#" style="color:#cbd5e1;text-decoration:none">Conditions</a>
+      </div>
+    </div>
   </footer>
-  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>
